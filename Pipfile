@@ -6,10 +6,11 @@ name = "pypi"
 [packages]
 flask = "==0.12.2"
 requests = "==2.18.4"
-isort = "*"
 werkzeug = "==0.12.2"
 
 [dev-packages]
+isort = "*"
 
 [requires]
 python_version = "3.9"
+

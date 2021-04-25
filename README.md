@@ -2,12 +2,33 @@
 
 a simple blockchain
 
-1. Clone the repo
-2. Build `docker build -t blockchain .`
-3. Run `docker run --rm -p 80:5000 blockchain`
+[Learn Blockchains by Building One](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)
+
+1. Build `docker build -t blockchain .`
+2. Run `docker run --rm -p 80:5000 blockchain`
+
+
+- `docker run --rm -p 81:5000 blockchain`
+- `docker run --rm -p 82:5000 blockchain`
 
 ---
-`GET: http://localhost:5000/mine`
+`POST: http://localhost:80/nodes/register`
+list of nodes to register
+```json
+{
+  "nodes": ["127.0.0.1:80", "127.0.0.1:81"]
+}
+```
+```json
+{
+  "message": "New nodes have been added",
+  "total_nodes": [
+    "81",
+    "80"
+  ]
+}
+```
+`GET: http://localhost:80/mine`
 ```json
 {
   "Index": 5,
@@ -22,9 +43,13 @@ a simple blockchain
     }
   ]
 }
+
 ```
-
----
-### todo
-
-Add nodes
+`POST: http://localhost:80/transactions/new`
+```json
+{
+  "sender": "43543564536543734563456",
+  "recipient": "some-recipient",
+  "amount": 120
+}
+```

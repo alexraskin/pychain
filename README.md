@@ -58,7 +58,3 @@ list of nodes to register
 }
 ```
 
-=======
-Add nodes
-
-> > > > > > > f401617afbb5a7c523fbfa0943e09e9cfada6fc1

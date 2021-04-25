@@ -44,8 +44,6 @@ list of nodes to register
     }
   ]
 }
-
-<<<<<<< HEAD
 ```
 
 `POST: http://localhost:80/transactions/new`
@@ -57,4 +55,3 @@ list of nodes to register
   "amount": 120
 }
 ```
-

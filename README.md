@@ -7,28 +7,29 @@ a simple blockchain
 1. Build `docker build -t blockchain .`
 2. Run `docker run --rm -p 80:5000 blockchain`
 
-
 - `docker run --rm -p 81:5000 blockchain`
 - `docker run --rm -p 82:5000 blockchain`
 
 ---
+
 `POST: http://localhost:80/nodes/register`
 list of nodes to register
+
 ```json
 {
   "nodes": ["127.0.0.1:80", "127.0.0.1:81"]
 }
 ```
+
 ```json
 {
   "message": "New nodes have been added",
-  "total_nodes": [
-    "81",
-    "80"
-  ]
+  "total_nodes": ["81", "80"]
 }
 ```
+
 `GET: http://localhost:80/mine`
+
 ```json
 {
   "Index": 5,
@@ -44,8 +45,11 @@ list of nodes to register
   ]
 }
 
+<<<<<<< HEAD
 ```
+
 `POST: http://localhost:80/transactions/new`
+
 ```json
 {
   "sender": "43543564536543734563456",
@@ -53,3 +57,8 @@ list of nodes to register
   "amount": 120
 }
 ```
+
+=======
+Add nodes
+
+> > > > > > > f401617afbb5a7c523fbfa0943e09e9cfada6fc1

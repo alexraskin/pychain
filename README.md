@@ -1,8 +1,14 @@
 # PyChain
 
-a simple blockchain
+Just for fun
 
-[Learn Blockchains by Building One](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)
+### What is blockchain?
+
+A blockchain, originally block chain, is a growing list of records, called blocks, that are linked using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. By design, a blockchain is resistant to modification of the data.
+
+[Blockchains](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)
+
+### Docker
 
 1. Build `docker build -t blockchain .`
 2. Run `docker run --rm -p 80:5000 blockchain`
@@ -54,4 +60,10 @@ list of nodes to register
   "recipient": "some-recipient",
   "amount": 120
 }
+```
+
+## Running Tests
+
+```
+$ pytest tests/
 ```

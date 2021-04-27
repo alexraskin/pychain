@@ -10,7 +10,8 @@ werkzeug = "==0.12.2"
 
 [dev-packages]
 isort = "*"
+pytest = "*"
+pytest-coverage = "*"
 
 [requires]
 python_version = "3.9"
-
